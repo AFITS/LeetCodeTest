@@ -32,6 +32,7 @@ public class JZ105 {
                 if (0 <= x && x < grid.length && 0 <= y && y < grid[0].length) {
                     area += dfs(grid, x, y);
                 }
+                int g= 0;
             }
             return area;
         }
