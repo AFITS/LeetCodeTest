@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * 层序遍历，BFS
  */
-public class LC102 {
+public class LC102二叉树的层序遍历 {
     public class TreeNode {
         int val;
         TreeNode left;
