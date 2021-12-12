@@ -33,6 +33,7 @@ public class JZ105 {
                     area += dfs(grid, x, y);
                 }
             }
+            int i =12;
             return area;
         }
     }
