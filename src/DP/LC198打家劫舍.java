@@ -5,7 +5,7 @@ package DP;
  * 每个房间都有数量不等的财宝，相邻两个房间盗取则触发警报，不触发警报可以获取多少财宝。
  * 如：5、2、6、3、1、7，最后的结果选5、6、7之和18；
  */
-public class LC198 {
+public class LC198打家劫舍 {
     public static int rob(int[] nums) {
         int n = nums.length;
         if (n == 1) return nums[0];

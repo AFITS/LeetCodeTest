@@ -9,7 +9,7 @@ package DP;
  * 3、边界状态值：1、2、n
  * 4、状态转移方程：dp[i]=dp[i-1]+dp[i-2]
  */
-public class LC70 {
+public class LC70爬楼梯 {
 
     public static void main(String[] args) {
         System.out.println(lc70(5));
