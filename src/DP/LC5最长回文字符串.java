@@ -10,10 +10,9 @@ import org.testng.annotations.Test;
  * 4、转义方程：P(i,j) = P(i+1,j-1) & Si = Sj
  */
 public class LC5最长回文字符串 {
-//    static class Solution {
+    static class Solution {
         public String longestPalindrome(String s) {
             if (s == null || s.length() == 0) {
-                return "";
             }
 //         保存起始位置，测试了用数组似乎能比全局变量稍快一点
             int[] range = new int[2];
@@ -46,7 +45,7 @@ public class LC5最长回文字符串 {
             }
             return ans;
         }
-//    }
+    }
 
 
 }
