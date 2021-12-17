@@ -22,6 +22,9 @@ public class LC5最长回文字符串 {
             for (int i = 0; i < len - 1; i++)
                 for (int j = i + 1; j < len; j++) {
                     if (j - i + 1 > maxLine&&)
+                    {
+
+                    }
                 }
 
 
