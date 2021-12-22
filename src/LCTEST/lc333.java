@@ -13,7 +13,7 @@ public class lc333 {
 //            for (int i = 0; i < len;i++){
 //                for(int j = i+1; j<len)
 //            }
-            int 1=0;
+            int 1=1;
 
 
         }
