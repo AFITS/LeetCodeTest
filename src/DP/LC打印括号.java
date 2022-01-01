@@ -31,6 +31,7 @@ public class LC打印括号 {
         }
 
 
+
         public List<String> generateParenthesis2(int n) {
             dfs(0, 0, n, "");
             return result;
