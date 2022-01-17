@@ -6,12 +6,12 @@ public class QuickSort_快速排序 {
     static int nums[] = new int[]{2, 3, 5, 6, 7, 3, 1, 0};
 
     public static void main(String[] args) {
-        sort(nums, 0, nums.length - 1);
+        sort2(nums, 0, nums.length - 1);
         System.out.println(Arrays.toString(nums));
     }
 
     public static void sort(int[] nums, int start, int end) {
-        if (start < end) {
+        if (start < end) {          //易错，不要忘了进入条件
             int key = nums[start];
             int l = start;
             int r = end;
@@ -34,6 +34,33 @@ public class QuickSort_快速排序 {
             sort(nums, start, l - 1);
             sort(nums, l + 1, end);
         }
+    }
+
+    public static void sort2(int nums[], int start, int end) {
+        if (start < end) {
+
+            int key = nums[start];
+            int l = start;
+            int r = end;
+            while (l < r) {
+                while (l < r && nums[r] > key) {
+                    r--;
+                }
+                if (l < r)
+                    nums[l++] = nums[r];
+
+                while (l < r && nums[l] < key) {
+                    l++;
+                }
+                if (l < r)
+                    nums[r--] = nums[l];
+
+            }
+            nums[l] = key;
+            sort2(nums, start, l - 1);
+            sort2(nums, l + 1, end);
+        }
+
     }
 
 }

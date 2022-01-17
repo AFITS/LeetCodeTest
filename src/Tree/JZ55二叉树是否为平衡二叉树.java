@@ -3,7 +3,7 @@ package Tree;
 /**
  * 判断二叉树是否为平衡二叉树
  */
-public class JZ55 {
+public class JZ55二叉树是否为平衡二叉树 {
     /**
      * Definition for a binary tree node.
      * public class TreeNode {
@@ -14,8 +14,8 @@ public class JZ55 {
      * }
      */
     class TreeNode {
-        JZ55.TreeNode left;
-        JZ55.TreeNode right;
+        TreeNode left;
+        TreeNode right;
 
         TreeNode() {
         }

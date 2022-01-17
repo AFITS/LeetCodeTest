@@ -12,7 +12,7 @@ public class HeapSort_堆排序 {
         int lson = 2 * i + 1;
         int rson = 2 * i + 2;
 
-        if (lson < n && nums[largest] < nums[lson]) {   // 构建大顶堆、小顶堆、全看大小于号
+        if (lson < n && nums[largest] < nums[lson]) {   // 构建大顶堆、小顶堆、全看大小于号【易错，不判断<n则溢出】
             largest = lson;
         }
         if (rson < n && nums[largest] < nums[rson]) {
