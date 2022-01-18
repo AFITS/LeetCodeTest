@@ -1,4 +1,4 @@
-package List;
+package 链表;
 
 public class LC24K个一组链表反转 {
     public static class ListNode {

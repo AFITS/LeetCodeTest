@@ -1,4 +1,4 @@
-package List;
+package 链表;
 
 public class JZ24反转链表 {
 
