@@ -1,6 +1,6 @@
-package 链表;
+package 閾捐〃;
 
-public class JZ77链表排序 {
+public class JZ77閾捐〃鎺掑簭 {
 
     public class ListNode {
         int val;
@@ -25,7 +25,7 @@ public class JZ77链表排序 {
 //
 //        }
 //
-//        // 获得中间结点
+//        // 鑾峰緱涓棿缁撶偣
 //        public ListNode getMidNode(ListNode head){
 //
 //        }

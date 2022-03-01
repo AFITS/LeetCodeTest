@@ -45,9 +45,25 @@ public class LC16不含重复字段的最长字符串 {
         return max;
     }
 
+    public static int lengthOfLongestSubstring3(String s) {
+        char[] arr = s.toCharArray();
+        int[] nums = new int[128];
+        int max = 0;
+        for (int l = 0, r = 0; r < arr.length; r++) {
+            nums[arr[r]]++;
+            if (nums[arr[r]] > 1) {
+                l++;
+                nums[arr[l]]--;
+            }
+            max = Math.max(r - l + 1, max);
+        }
+        return max;
+
+    }
+
 
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring2("dvdf"));
+        System.out.println(lengthOfLongestSubstring3("abcabcbb"));
 
     }
 

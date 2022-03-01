@@ -1,9 +1,9 @@
-package Êı¾İ½á¹¹;
+package æ•°æ®ç»“æ„;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class LC146LRU»º´æ {
+public class LC146LRUç¼“å­˜ {
     class LRUCache {
         class LinkNode {
             int key;
@@ -44,7 +44,7 @@ public class LC146LRU»º´æ {
                 addToHead(temp);
                 ++size;
                 if (size > capacity) {
-                    // É¾³ı×îºóÒ»¸ö½Úµã£¬¼´tailµÄÇ°Ò»¸ö½Úµã
+                    // åˆ é™¤æœ€åä¸€ä¸ªèŠ‚ç‚¹ï¼Œå³tailçš„å‰ä¸€ä¸ªèŠ‚ç‚¹
                     LinkNode tail = removeTail();
                     cache.remove(tail.key);
                     --size;
@@ -67,7 +67,7 @@ public class LC146LRU»º´æ {
             }
         }
 
-        // ¼Ó½áµã£¬Ç°ºó¶¼Òª¼Ó£¬ËÄ¸ö
+        // åŠ ç»“ç‚¹ï¼Œå‰åéƒ½è¦åŠ ï¼Œå››ä¸ª
         public void addToHead(LinkNode node) {
             node.next = head.next;
             node.prev = head;
@@ -80,7 +80,7 @@ public class LC146LRU»º´æ {
             node.next.prev = node.prev;
         }
 
-        // ²»Çø·ÖÇé¿ö£¬ÏÈÉ¾ºóÔö¼Ó
+        // ä¸åŒºåˆ†æƒ…å†µï¼Œå…ˆåˆ åå¢åŠ 
         public void moveToHead(LinkNode node) {
             removeNode(node);
             addToHead(node);

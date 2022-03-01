@@ -1,6 +1,6 @@
-package 链表;
+package 閾捐〃;
 
-public class LC160相交链表 {
+public class LC160鐩镐氦閾捐〃 {
     public class ListNode {
         int val;
         ListNode next;
