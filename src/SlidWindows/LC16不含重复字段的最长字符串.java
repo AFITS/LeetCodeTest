@@ -46,16 +46,15 @@ public class LC16不含重复字段的最长字符串 {
     }
 
     public static int lengthOfLongestSubstring3(String s) {
-        char[] arr = s.toCharArray();
-        int[] nums = new int[128];
+        int[] map = new int[26];
         int max = 0;
-        for (int l = 0, r = 0; r < arr.length; r++) {
-            nums[arr[r]]++;
-            if (nums[arr[r]] > 1) {
+        for (int l = 0, r = 0; r < s.length(); r++) {
+            map[s.charAt(r) - 'a']++;
+            while (map[s.charAt(r) - 'a'] > 1) {
+                map[s.charAt(l) - 'a']--;
                 l++;
-                nums[arr[l]]--;
             }
-            max = Math.max(r - l + 1, max);
+            max = Math.max(max, r - l + 1);
         }
         return max;
 
